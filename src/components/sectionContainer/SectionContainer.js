@@ -1,14 +1,12 @@
 import React from "react";
 import Services from "./Services";
 import FeaturedProduct from "./FeaturedProduct";
-import NewArrival from "./NewArrival";
-function SectionContainer(){
+function SectionContainer(props){
     return (
         <div className="page-wrapper">
         <div className="page-content">
             <Services/>
-            <FeaturedProduct/>
-            <NewArrival/>
+            <FeaturedProduct onAdd={props.onAdd} products={props.products}/>
           
         </div>
       </div>

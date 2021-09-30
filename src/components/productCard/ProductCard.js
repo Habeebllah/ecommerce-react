@@ -1,42 +1,66 @@
 import React from "react";
-import classes from './ProductCard.module.css';
-import { Link } from 'react-router-dom'; 
+import classes from "./ProductCard.module.css";
+import { Link } from "react-router-dom";
 import ProductDetailsPage from "../../pages/productdetailspage/ProductDetailsPage";
-
-function ProductCard(props){
-  let newClassName = 'color_bg ${props.name}'
-  let bg_img = 'url(${props.image})'
-  let {id, name, image, price, description} = props
+function ProductCard({key, id, name, image1, image2, image3, category, old_price, price, description, onAdd, product}) {
   
-    return(
-      <div className={classes.card}>
-        <div className={classes.warpper}>
-          <div className={classes.newClassName}></div>
-          <img className={classes.card_img} src={image}/>
-          <div className={classes.cardInfo}>
-            <Link to={{pathname: `/product-details/${id}`, state:{product:props}}} >
-            <h1>{name}</h1>
-            </Link>
-            <div className={classes.action}>
-              <div className={classes.priceGroup}>
-                <p className={classes.price, classes.old_price}></p>
-                <p className={classes.price, classes.newPrice}>N{price}</p>
+ 
+  return (
+    
+    <div className="col">
+      <div className="card rounded-0 product-card">
+        <div className="card-header bg-transparent border-bottom-0">
+          <div className="d-flex align-items-center justify-content-end gap-3">
+            
+          </div>
+        </div>
+        <span>
+          <img
+            src={image1}
+            className="card-img-top"
+            alt="..."
+          />
+        </span>
+        <div className="card-body">
+          <div className="product-info">
+            <a href="javascript:;">
+              <p className="product-catergory font-13 mb-1"><b>{category}</b></p>
+            </a>
+            <a href="javascript:;">
+              <h6 className="product-name mb-2">{name}</h6>
+            </a>
+            <div className="d-flex align-items-center">
+              <div className="mb-1 product-price">
+                {" "}
+                <span className="me-1 text-decoration-line-through">₦{old_price}</span>
+                <span className="fs-5">₦{price}</span>
               </div>
-              <div className={classes.cart}>
-                
-                <svg className={classes.outCart} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-                  <path d="M2 6h10110 40h3218-24H16"></path>
-                  <circle cx="23" cy="54" r="4"></circle>
-                  <circle cx="49" cy="54" r="4"></circle>
-                </svg>
+              <div className="cursor-pointer ms-auto">
+                {" "}
+                <i className="bx bxs-star text-warning"></i>
+                <i className="bx bxs-star text-warning"></i>
+                <i className="bx bxs-star text-warning"></i>
+                <i className="bx bxs-star text-warning"></i>
+                <i className="bx bxs-star text-warning"></i>
+              </div>
+            </div>
+            <div className="product-action mt-2">
+              <div className="d-grid gap-2">
+                <button className="btn btn-dark btn-ecomm" onClick={() => onAdd(product)}>
+                  {" "}
+                  <i className="bx bxs-cart-add"></i>Add to Cart
+                </button>{" "}
                 
               </div>
             </div>
           </div>
         </div>
-        </div>
+      </div>
+    </div>
+      
+      
 
-    );
-}  
+  );
+}
 
 export default ProductCard;

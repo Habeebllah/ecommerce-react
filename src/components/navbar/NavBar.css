@@ -1,0 +1,39 @@
+@media screen and (max-width: 575px) {
+	.input-group select{
+        display: none !important;
+    }
+
+    .input-group{
+        width: 24rem;
+    
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+	
+
+    .input-group{
+        width: 25rem;
+
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+	
+
+    .input-group{
+        width: 20rem;
+
+    }
+}
+
+@media screen and (max-width: 320px) {
+	
+
+    .input-group{
+        width: 18rem;
+
+    }
+}

@@ -1,172 +1,172 @@
-import classes from './CartPage.module.css'
-import React from 'react';
-import { Link } from 'react-router-dom';
-import SubHeader from '../../components/sub_header/SubHeader';
-const CartPage = () => {
-    return(
-        <div class="page-wrapper">
-			<div class="page-content">
-                <SubHeader name="Cart"/>
-                <section class="py-4">
-					<div class="container">
-						<div class="shop-cart">
-							<div class="row">
-								<div class="col-12 col-xl-8">
-									<div class="shop-cart-list mb-3 p-3">
-										<div class="row align-items-center g-3">
-											<div class="col-12 col-lg-6">
-												<div class="d-lg-flex align-items-center gap-2">
-													<div class="cart-img text-center text-lg-start">
-														<img src="assets/images/products/01.png" width="130" alt=""/>
-													</div>
-													<div class="cart-detail text-center text-lg-start">
-														<h6 class="mb-2">White Regular Fit Polo T-Shirt</h6>
-														<p class="mb-0">Size: <span>Regular</span>
-														</p>
-														<p class="mb-2">Color: <span>White & Blue</span>
-														</p>
-														<h5 class="mb-0">$19.00</h5>
-													</div>
-												</div>
-											</div>
-											<div class="col-12 col-lg-3">
-												<div class="cart-action text-center">
-													<input type="number" class="form-control rounded-0" value="2" min="1"/>
-												</div>
-											</div>
-											<div class="col-12 col-lg-3">
-												<div class="text-center">
-													<div class="d-flex gap-2 justify-content-center justify-content-lg-end"> <a href="javascript:;" class="btn btn-dark rounded-0 btn-ecomm"><i class='bx bx-x-circle'></i> Remove</a>
-														<a href="javascript:;" class="btn btn-light rounded-0 btn-ecomm"><i class='bx bx-heart me-0'></i></a>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="my-4 border-top"></div>
-										<div class="row align-items-center g-3">
-											<div class="col-12 col-lg-6">
-												<div class="d-lg-flex align-items-center gap-2">
-													<div class="cart-img text-center text-lg-start">
-														<img src="assets/images/products/17.png" width="130" alt=""/>
-													</div>
-													<div class="cart-detail text-center text-lg-start">
-														<h6 class="mb-2">Fancy Red Sneakers</h6>
-														<p class="mb-0">Size: <span>Small</span>
-														</p>
-														<p class="mb-2">Color: <span>White & Red</span>
-														</p>
-														<h5 class="mb-0">$16.00</h5>
-													</div>
-												</div>
-											</div>
-											<div class="col-12 col-lg-3">
-												<div class="cart-action text-center">
-													<input type="number" class="form-control rounded-0" value="2" min="1"/>
-												</div>
-											</div>
-											<div class="col-12 col-lg-3">
-												<div class="text-center">
-													<div class="d-flex gap-2 justify-content-center justify-content-lg-end"> <a href="javascript:;" class="btn btn-dark rounded-0 btn-ecomm"><i class='bx bx-x-circle'></i> Remove</a>
-														<a href="javascript:;" class="btn btn-light rounded-0 btn-ecomm"><i class='bx bx-heart me-0'></i></a>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="my-4 border-top"></div>
-										<div class="row align-items-center g-3">
-											<div class="col-12 col-lg-6">
-												<div class="d-lg-flex align-items-center gap-2">
-													<div class="cart-img text-center text-lg-start">
-														<img src="assets/images/products/04.png" width="130" alt=""/>
-													</div>
-													<div class="cart-detail text-center text-lg-start">
-														<h6 class="mb-2">Yellow Shine Blazer</h6>
-														<p class="mb-0">Size: <span>Medium</span>
-														</p>
-														<p class="mb-2">Color: <span>Yellow & Blue</span>
-														</p>
-														<h5 class="mb-0">$22.00</h5>
-													</div>
-												</div>
-											</div>
-											<div class="col-12 col-lg-3">
-												<div class="cart-action text-center">
-													<input type="number" class="form-control rounded-0" value="2" min="1"/>
-												</div>
-											</div>
-											<div class="col-12 col-lg-3">
-												<div class="text-center">
-													<div class="d-flex gap-2 justify-content-center justify-content-lg-end"> <a href="javascript:;" class="btn btn-dark rounded-0 btn-ecomm"><i class='bx bx-x-circle'></i> Remove</a>
-														<a href="javascript:;" class="btn btn-light rounded-0 btn-ecomm"><i class='bx bx-heart me-0'></i></a>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="my-4 border-top"></div>
-										<div class="row align-items-center g-3">
-											<div class="col-12 col-lg-6">
-												<div class="d-lg-flex align-items-center gap-2">
-													<div class="cart-img text-center text-lg-start">
-														<img src="assets/images/products/09.png" width="130" alt=""/>
-													</div>
-													<div class="cart-detail text-center text-lg-start">
-														<h6 class="mb-2">Men Black Hat Cap</h6>
-														<p class="mb-0">Size: <span>Medium</span>
-														</p>
-														<p class="mb-2">Color: <span>Black</span>
-														</p>
-														<h5 class="mb-0">$14.00</h5>
-													</div>
-												</div>
-											</div>
-											<div class="col-12 col-lg-3">
-												<div class="cart-action text-center">
-													<input type="number" class="form-control rounded-0" value="1" min="1"/>
-												</div>
-											</div>
-											<div class="col-12 col-lg-3">
-												<div class="text-center">
-													<div class="d-flex gap-2 justify-content-center justify-content-lg-end"> <a href="javascript:;" class="btn btn-dark rounded-0 btn-ecomm"><i class='bx bx-x-circle'></i> Remove</a>
-														<a href="javascript:;" class="btn btn-light rounded-0 btn-ecomm"><i class='bx bx-heart me-0'></i></a>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="my-4 border-top"></div>
-										<div class="d-lg-flex align-items-center gap-2">	<a href="javascript:;" class="btn btn-dark btn-ecomm"><i class='bx bx-shopping-bag'></i> Continue Shoping</a>
-											<a href="javascript:;" class="btn btn-light btn-ecomm ms-auto"><i class='bx bx-x-circle'></i> Clear Cart</a>
-											<a href="javascript:;" class="btn btn-white btn-ecomm"><i class='bx bx-refresh'></i> Update Cart</a>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-xl-4">
-									<div class="checkout-form p-3 bg-light">
-									
-										<div class="card rounded-0 border bg-transparent mb-0 shadow-none">
-											<div class="card-body">
-												<p class="mb-2">Subtotal: <span class="float-end">$198.00</span>
-												</p>
-												<p class="mb-2">Shipping: <span class="float-end">--</span>
-												</p>
-												<p class="mb-0">Discount: <span class="float-end">--</span>
-												</p>
-												<div class="my-3 border-top"></div>
-												<h5 class="mb-0">Order Total: <span class="float-end">212.00</span></h5>
-												<div class="my-4"></div>
-												<div class="d-grid"> <a href="javascript:;" class="btn btn-dark btn-ecomm">Proceed to Checkout</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+import classes from "./CartPage.module.css";
+import React from "react";
+import { Link } from "react-router-dom";
+import SubHeader from "../../components/sub_header/SubHeader";
+const CartPage = (props) => {
+  const { cartItems, onAdd, onRemove, removeProduct, clearCart } = props;
+  const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0);
+  const taxPrice = itemsPrice * 0.14;
+  const shippingPrice = itemsPrice > 2000 ? 0 : 20;
+  const totalPrice = itemsPrice + taxPrice + shippingPrice;
 
+  const subprice = (a, b) => {
+    const cal = a * b;
+    return cal.toFixed(2);
+  };
+  return (
+    <div className="page-wrapper">
+      <div className="page-content">
+        <SubHeader name="Cart" />
+        <section className="py-4">
+          <div className="container">
+            <div className="shop-cart">
+              <div className="row">
+                <div className="col-12 col-xl-8">
+                  <div className="shop-cart-list mb-3 p-3">
+                    {cartItems.length === 0 && (
+                      <div className="mt-5 mb-5">
+                        <h4>Cart is empty</h4>
+                      </div>
+                    )}
+                    {cartItems.map((item) => (
+                      <div>
+                        <div
+                          key={item.id}
+                          className="row align-items-center g-3"
+                        >
+                          <div className="col-12 col-lg-6">
+                            <div className="d-lg-flex align-items-center gap-2">
+                              <div className="cart-img text-center text-lg-start">
+                                <img src={item.image1} width="130" alt="" />
+                              </div>
+                              <div className="cart-detail text-center text-lg-start">
+                                <h6 className="mb-2">{item.name}</h6>
+
+                                <h5 className="mb-0">₦{item.price}</h5>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="col-12 col-lg-2 justify-content-center" style={{display:"flex"}}>
+                            <div
+                              className="cart-action text-center"
+                              style={{ display: "inline-flex" }}
+                            >
+                              <button
+                                onClick={() => onRemove(item)}
+                                className="bg-dark text-light"
+                              >
+                                -
+                              </button>
+                              <input
+                                type="text"
+                                className="form-control rounded-0 text-center"
+                                style={{ width: "55px" }}
+                                value={item.qty}
+                                min="1"
+                              />
+                              <button
+                                onClick={() => onAdd(item)}
+                                className="bg-dark text-light"
+                              >
+                                +
+                              </button>
+                            </div>
+                          </div>
+                          <div className="col-12 col-lg-3">
+                            <div className="text-center">
+                              <div className="d-flex gap-2 justify-content-center">
+                                <h4 className="">
+                                  ₦{subprice(item.price, item.qty)}
+                                </h4>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="col-12 col-lg-1">
+                            <div className="text-center">
+                              <div className="d-flex gap-2 justify-content-center" >
+                                {" "}
+                                <button
+                                  onClick={() => removeProduct(item)}
+                                  className="btn btn-dark rounded-0 btn-ecomm"
+                                >
+                                  <i class="bx bx-x-circle"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="my-4 border-top"></div>
+                      </div>
+                    ))}
+                    <div className="d-lg-flex align-items-center gap-2" style={{display:"flex"}}>
+                      {" "}
+                      <Link to="/products" className="btn btn-dark btn-ecomm">
+                        <i class="bx bx-shopping-bag"></i> Continue Shoping
+                      </Link>
+                      <button
+                        onClick={clearCart}
+                        class="btn btn-light btn-ecomm ms-auto border-dark"
+                      >
+                        <i class="bx bx-x-circle"></i> Clear Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                {cartItems.length !== 0 && (
+                  <>
+                    <div className="col-12 col-xl-4">
+                      <div className="checkout-form p-3 bg-light">
+                        <div className="card rounded-0 border bg-transparent mb-0 shadow-none">
+                          <div className="card-body">
+                            <p className="mb-2">
+                              Subtotal:{" "}
+                              <span className="float-end">
+                                ₦{itemsPrice.toFixed(2)}
+                              </span>
+                            </p>
+                            <p className="mb-2">
+                              Shipping:{" "}
+                              <span className="float-end">
+                                ₦{shippingPrice.toFixed(2)}
+                              </span>
+                            </p>
+                            <p className="mb-0">
+                              Tax:{" "}
+                              <span className="float-end">
+                                ₦{taxPrice.toFixed(2)}
+                              </span>
+                            </p>
+                            <div className="my-3 border-top"></div>
+                            <h5 className="mb-0">
+                              Order Total:{" "}
+                              <span className="float-end">
+                                ₦{totalPrice.toFixed(2)}
+                              </span>
+                            </h5>
+                            <div className="my-4"></div>
+                            <div className="d-grid">
+                              {" "}
+                              <Link
+                                to="/checkout-details"
+                                className="btn btn-dark btn-ecomm"
+                              >
+                                Proceed to Checkout
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </>
+                )}
+              </div>
             </div>
-        </div>
-    )
-}
+          </div>
+        </section>
+      </div>
+    </div>
+  );
+};
 
 export default CartPage;

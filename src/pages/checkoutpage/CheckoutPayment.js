@@ -2,7 +2,8 @@ import React from "react";
 import SubHeader from "../../components/sub_header/SubHeader";
 import OrderSummary from "../../components/orderSummary/OrderSummary";
 import { Link } from "react-router-dom";
-const CheckoutPayment = () => {
+const CheckoutPayment = (props) => {
+  const {cartItems} = props
   return (
     <div class="page-wrapper">
       <div class="page-content">
@@ -318,7 +319,7 @@ const CheckoutPayment = () => {
                               {" "}
                               <Link
                                 to="/checkout-details"
-                                class="btn btn-light btn-ecomm"
+                                class="btn btn-light btn-ecomm border-dark"
                               >
                                 <i class="bx bx-chevron-left"></i>Back to
                                 Shipping Details
@@ -330,7 +331,7 @@ const CheckoutPayment = () => {
                               {" "}
                               <Link
                                 to="/checkout-complete"
-                                class="btn btn-white btn-ecomm"
+                                class="btn btn-dark btn-ecomm text-light"
                               >
                                 Confirm Order<i class="bx bx-chevron-right"></i>
                               </Link>
@@ -341,7 +342,7 @@ const CheckoutPayment = () => {
                     </div>
                   </div>
                 </div>
-                <OrderSummary />
+                <OrderSummary cartItems={cartItems}/>
               </div>
             </div>
           </div>
