@@ -79,7 +79,7 @@ function HomeSlider(){
                   </div>
                   <div className="col">
                     <img
-                      src="https://habeebllah.github.io/ecommerce-react/public/assets/images/slider/05.png"
+                      src="https://habeebllah.github.io/ecommerce-react/assets/images/slider/05.png"
                       className="img-fluid"
                       alt="..."
                     />
@@ -108,7 +108,7 @@ function HomeSlider(){
                   </div>
                   <div className="col">
                     <img
-                      src="https://habeebllah.github.io/ecommerce-react/public/assets/images/slider/03.png"
+                      src="https://habeebllah.github.io/ecommerce-react/assets/images/slider/03.png"
                       className="img-fluid"
                       alt="..."
                     />
