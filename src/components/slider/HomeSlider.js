@@ -47,7 +47,7 @@ function HomeSlider(){
                   </div>
                   <div className="col">
                     <img
-                      src="assets/images/slider/04.PNG"
+                      src="https://Habeebllah.github.io/ecommerce-react/public/assets/images/slider/04.PNG"
                       className="img-fluid"
                       alt="..."
                     />
@@ -78,7 +78,7 @@ function HomeSlider(){
                   </div>
                   <div className="col">
                     <img
-                      src="assets/images/slider/05.PNG"
+                      src="https://Habeebllah.github.io/ecommerce-react/public/assets/images/slider/05.PNG"
                       className="img-fluid"
                       alt="..."
                     />
@@ -107,7 +107,7 @@ function HomeSlider(){
                   </div>
                   <div className="col">
                     <img
-                      src="assets/images/slider/03.PNG"
+                      src="https://Habeebllah.github.io/ecommerce-react/public/assets/images/slider/03.PNG"
                       className="img-fluid"
                       alt="..."
                     />
