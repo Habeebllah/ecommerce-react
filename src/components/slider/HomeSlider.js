@@ -80,8 +80,6 @@ function HomeSlider(){
                   <div className="col">
                     <img
                       src="https://habeebllah.github.io/ecommerce-react/assets/images/slider/05.png"
-
-
                       className="img-fluid"
                       alt="..."
                     />
@@ -95,7 +93,7 @@ function HomeSlider(){
                       <h3 className="h3 fw-light">Complete your look with</h3>
                       <h1 className="h1">New Men's Accessories</h1>
                       <p className="pb-3">
-                        Hats &amp; Caps, Sunglasses, Bags &amp; much more...
+                        Watch &amp; Caps, Sunglasses, Bags &amp; much more...
                       </p>
                       <div className="">
                         {" "}
