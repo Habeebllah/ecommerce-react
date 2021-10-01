@@ -47,7 +47,7 @@ function HomeSlider(){
                   </div>
                   <div className="col">
                     <img
-                      src="https://Habeebllah.github.io/ecommerce-react/public/assets/images/slider/04.png"
+                      src="https://Habeebllah.github.io/ecommerce-react/assets/images/slider/04.png"
                       className="img-fluid"
                       alt="..."
                     />
