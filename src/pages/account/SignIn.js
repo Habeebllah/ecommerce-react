@@ -77,14 +77,14 @@ function SignIn() {
                             </div>
                             <div className="col-12">
                               <div className="d-grid">
-                                
+                              <Link to="/account-dashboard" style={{color:"white", textDecoration:"none"}}>
                                 <button
                                   type="submit"
                                   className="btn btn-primary"
                                 >
-                                  <i className="bx bxs-lock-open"></i><Link to="/account-dashboard" style={{color:"white", textDecoration:"none"}}>Sign in
-                                </Link></button>
-                                
+                                  <i className="bx bxs-lock-open"></i>Sign in
+                                </button>
+                                </Link>
                               </div>
                             </div>
                           </form>
