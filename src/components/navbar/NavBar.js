@@ -10,6 +10,7 @@ function NavBar(props) {
   }
   return (
     <div className="header-wrapper fixed">
+      <input type="checkbox" className="checks" id="checks"/>
       <div className="top-menu border-bottom">
         <div className="container">
           <nav className="navbar navbar-expand">
@@ -24,20 +25,20 @@ function NavBar(props) {
           <div className="row align-items-center">
             <div className="col-4 col-md-auto">
               <div className="d-flex align-items-center">
-                <div
-                  className="mobile-toggle-menu d-lg-none px-lg-2"
-                  data-trigger="#navbar_main"
-                >
-                  <i className="bx bx-menu"></i>
-                </div>
+                
+              <label for="checks" className="bar">
+                  <span className="bx bx-menu first_icon"></span>
+                  <span className="bx bx-x-circle second_icon"></span>
+                </label>
+                
                 <div className="logo d-none d-lg-flex">
-                  <a href="index.html">
+                  <Link to="/">
                     <img
                       src="assets/images/logo-icon.png"
                       className="logo-icon"
                       alt=""
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -106,33 +107,30 @@ function NavBar(props) {
         <div className="container">
           <nav
             id="navbar_main"
-            className="mobile-offcanvas navbar navbar-expand-lg"
+            className="navbar navbar-expand-lg"
           >
-            <div className="offcanvas-header">
-              <button className="btn-close float-end"></button>
-              <h5 className="py-2"></h5>
-            </div>
+            
             <ul className="navbar-nav">
               <li className="nav-item active">
                 {" "}
-                <Link className="nav-link" to="/">
+                <Link className="nav-link links" to="/">
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link " to="/products">
+                <Link className="nav-link links" to="/products">
                   Product{" "}
                 </Link>
               </li>
               <li className="nav-item">
                 {" "}
-                <Link className="nav-link" to="/contact">
+                <Link className="nav-link links" to="/contact">
                   Contact Us{" "}
                 </Link>
               </li>
               <li className="nav-item">
                 {" "}
-                <Link className="nav-link" to="/account-dashboard">
+                <Link className="nav-link links" to="/account-dashboard">
                   My Account{" "}
                 </Link>
               </li>

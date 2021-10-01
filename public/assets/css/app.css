@@ -409,7 +409,8 @@ ul.categories-list li {
 
 @media screen and (max-width: 999px) {
 	.slider-section {
-		margin-top: -152px
+		margin-top: -152px;
+		margin-bottom: 227px;
 
 	}
 

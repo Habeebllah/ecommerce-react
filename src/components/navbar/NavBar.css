@@ -1,39 +1,106 @@
 @media screen and (max-width: 575px) {
-	.input-group select{
-        display: none !important;
-    }
-
+	
     .input-group{
-        width: 24rem;
+        width: 18rem;
     
     }
 }
 
 
-@media screen and (max-width: 425px) {
-	
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    display: none;
+}
 
-    .input-group{
-        width: 25rem;
-
-    }
+.bar{
+    -webkit-appearance: none;
+    display: none;
 }
 
 
-@media screen and (max-width: 375px) {
-	
+@media screen and (max-width: 992px) {
+    nav{
+        display: block;
+        padding: 0;
+    }
 
-    .input-group{
-        width: 20rem;
+    .bar span{
+        
+        font-size: 25px;
+    
+    }
+
+
+    .primary-menu nav ul {
+        display: flex;
+        flex-direction: column;
+        visibility: hidden;
+        transition: 0.3s;
+    }
+
+    .primary-menu nav ul li{
+        text-align: center; 
+        transition: 0.3s 0.1s all;
+        opacity: 0;
+    }
+    
+    .primary-menu nav ul li .links{
+        color: #000;
+        font-size: 28px;
+        display: block;
+    }
+
+    .primary-menu nav ul li:nth-child(1){
+        transform: translateX(-150px);
+    }
+
+    .primary-menu nav ul li:nth-child(2){
+        transform: translateX(-200px);
+    }
+
+    .primary-menu nav ul li:nth-child(3){
+        transform: translateX(-250px);
+    }
+
+    .primary-menu nav ul li:nth-child(4){
+        transform: translateX(-300px);
+    }
+
+    .primary-menu nav{
+        display: block;
+        visibility: hidden;
 
     }
-}
 
-@media screen and (max-width: 320px) {
-	
-
-    .input-group{
-        width: 18rem;
+    .bar{
+        display: block;
+        position: absolute;
+        cursor: pointer;
 
     }
+    .bar span:nth-child(2){
+        display: none;
+    }
+
+    .checks:checked ~ .header-content .bar span:nth-child(2){
+        display: block;
+
+    }
+    .checks:checked ~ .header-content .bar span:nth-child(1){
+        display: none;
+    }
+    .checks:checked ~ .primary-menu nav ul{
+        visibility: visible;
+        height: 295px;
+    }
+
+    .checks:checked ~ .primary-menu nav ul li:nth-child(1),
+    .checks:checked ~ .primary-menu nav ul li:nth-child(2),
+    .checks:checked ~ .primary-menu nav ul li:nth-child(3),
+    .checks:checked ~ .primary-menu nav ul li:nth-child(4){
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+
 }
