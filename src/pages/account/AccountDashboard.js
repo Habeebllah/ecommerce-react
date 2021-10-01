@@ -27,7 +27,7 @@ function AccountDashboard(){
 									<div className="col-lg-8">
 										<div className="card shadow-none mb-0">
 											<div className="card-body">
-												<p>Hello <strong>Habeeb Lasisi</strong> (not <strong>Habeeb Lasisi?</strong>  <Link to="/">Logout</Link>)</p>
+												<p>Hello <strong>user</strong> (not <strong>user?</strong>  <Link to="/">Logout</Link>)</p>
 												<p>From your account dashboard you can view your Recent Orders, manage your shipping and billing addesses and edit your password and account details</p>
 											</div>
 										</div>
