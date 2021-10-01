@@ -33,21 +33,13 @@ function NavBar(props) {
                 
                 <div className="logo d-none d-lg-flex">
                   <Link to="/">
+                    
                     <img
-                      src="assets/images/logo-icon.PNG"
+                      src="https://Habeebllah.github.io/ecommerce-react/assets/images/logo-icon.png"
                       className="logo-icon"
                       alt=""
                     />
-                    <img
-                      src="assets/images/logo-icon.png"
-                      className="logo-icon"
-                      alt=""
-                    />
-                    <img
-                      src="assets/images/logo-icon.PNG.png"
-                      className="logo-icon"
-                      alt=""
-                    />
+                    
                   </Link>
                 </div>
               </div>
