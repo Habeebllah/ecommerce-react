@@ -35,7 +35,7 @@ function NavBar(props) {
                   <Link to="/">
                     
                     <img
-                      src="https://Habeebllah.github.io/ecommerce-react/assets/images/logo-icon.png"
+                      src="https://habeebllah.github.io/ecommerce-react/assets/images/logo-icon.png"
                       className="logo-icon"
                       alt=""
                     />
